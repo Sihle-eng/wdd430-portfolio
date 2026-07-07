@@ -12,7 +12,6 @@ export async function GET(request: NextRequest) {
     } else {
       projects = getAllProjects();
     }
-
     return NextResponse.json(projects);
   } catch (error) {
     return NextResponse.json(
